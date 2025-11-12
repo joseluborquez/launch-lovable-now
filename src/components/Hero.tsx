@@ -17,7 +17,6 @@ const Hero = () => {
           alt="" 
           className="w-full h-full object-cover animate-slow-zoom"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
       </div>
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl">
