@@ -66,19 +66,19 @@ const Problems = () => {
             return (
               <Card
                 key={index}
-                className="p-6 hover:shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 bg-card border-border"
+                className="p-6 hover:shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 bg-[#1e40af] border-[#1e40af]"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-lg text-card-foreground">
+                    <h3 className="font-semibold text-lg text-white">
                       {problem.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-white/90 text-sm leading-relaxed">
                       {problem.description}
                     </p>
                   </div>
