@@ -38,7 +38,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden group hover:shadow-[var(--shadow-card)] transition-all duration-300 border-border bg-card"
+              className="overflow-hidden group hover:shadow-[var(--shadow-card)] transition-all duration-300 border-border bg-card flex flex-col"
             >
               <div className="relative overflow-hidden aspect-video">
                 <img
