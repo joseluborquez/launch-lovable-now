@@ -74,7 +74,7 @@ const Method = () => {
                     key={index}
                     className="relative group"
                   >
-                    <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 min-h-[280px] flex flex-col">
+                    <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-3 h-[320px] flex flex-col">
                       {/* Icon with gradient background */}
                       <div className={`w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                         <Icon className="h-10 w-10 text-white" />
@@ -124,7 +124,7 @@ const Method = () => {
                     </div>
                     
                     {/* Content card */}
-                    <Card className="flex-1 p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group-hover:-translate-y-1">
+                    <Card className="flex-1 p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                       <div className="space-y-3">
                         <div>
                           <span className={`text-sm font-bold bg-gradient-to-r ${step.color} bg-clip-text text-transparent`}>
