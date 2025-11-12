@@ -21,13 +21,13 @@ const Hero = () => {
       <div className="container mx-auto relative z-10">
         <div className="max-w-3xl">
           <div className="space-y-8 animate-fade-in">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
               Lanza tu app o SaaS{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-white">
                 en semanas, no meses
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg sm:text-xl text-white leading-relaxed">
               Ayudo a emprendedores digitales a convertir sus ideas en productos
               reales con herramientas No-Code e Inteligencia Artificial,
               ahorrando costos y tiempos.
