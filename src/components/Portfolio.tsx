@@ -47,12 +47,12 @@ const Portfolio = () => {
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 flex flex-col h-full">
                 <h3 className="text-2xl font-bold">{project.name}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mt-4 flex-1">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge
                       key={tagIndex}
