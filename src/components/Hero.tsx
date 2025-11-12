@@ -15,7 +15,7 @@ const Hero = () => {
         <img 
           src={heroBackground} 
           alt="" 
-          className="w-full h-full object-cover animate-slow-zoom opacity-60"
+          className="w-full h-full object-cover animate-slow-zoom opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
       </div>
