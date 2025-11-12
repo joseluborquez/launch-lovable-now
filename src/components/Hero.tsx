@@ -10,17 +10,17 @@ const Hero = () => {
       });
     }
   };
-  return <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  return <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
         <img 
           src={heroBackground} 
           alt="" 
-          className="w-full h-full object-cover animate-slow-zoom opacity-30"
+          className="w-full h-full object-cover animate-slow-zoom opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/80 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
       </div>
       <div className="container mx-auto relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
               Lanza tu app o SaaS{" "}
@@ -33,7 +33,7 @@ const Hero = () => {
               reales con herramientas No-Code e Inteligencia Artificial,
               ahorrando costos y tiempos.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" onClick={scrollToCTA} className="group">
                 Agenda una reunión gratuita
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
