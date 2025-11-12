@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
+import heroBackground from "@/assets/hero-background.png";
 const Hero = () => {
   const scrollToCTA = () => {
     const element = document.getElementById("cta");
@@ -10,14 +11,22 @@ const Hero = () => {
       });
     }
   };
-  return <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto">
+  return <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroBackground} 
+          alt="" 
+          className="w-full h-full object-cover animate-slow-zoom"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background" />
+      </div>
+      <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
               Lanza tu app o SaaS{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                sin programar
+                en semanas, no meses
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
