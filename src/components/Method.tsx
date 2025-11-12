@@ -1,5 +1,6 @@
-import { Search, FileCheck, Layout, Code, Rocket } from "lucide-react";
+import { Search, FileCheck, Layout, Code, Rocket, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const steps = [
   {
@@ -144,6 +145,20 @@ const Method = () => {
               })}
             </div>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-16 text-center">
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            asChild
+          >
+            <a href="#" className="flex items-center gap-2">
+              <Calendar className="h-5 w-5" />
+              Agendar reunión gratis
+            </a>
+          </Button>
         </div>
       </div>
     </section>
