@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background.png";
 const Hero = () => {
   const scrollToCTA = () => {
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" onClick={scrollToCTA} className="group">
                 Agenda una reunión gratuita
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <MoveRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>

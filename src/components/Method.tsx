@@ -1,4 +1,4 @@
-import { CheckCircle2 } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 
 const steps = [
   {
@@ -63,7 +63,7 @@ const Method = () => {
                 <div className="flex-1 pt-4 space-y-2">
                   <div className="flex items-center gap-3">
                     <h3 className="text-2xl font-semibold">{step.title}</h3>
-                    <CheckCircle2 className="h-6 w-6 text-primary" />
+                    <BadgeCheck className="h-6 w-6 text-primary" />
                   </div>
                   <p className="text-muted-foreground text-lg">
                     {step.description}

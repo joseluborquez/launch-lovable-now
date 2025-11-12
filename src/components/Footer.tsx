@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Twitter } from "lucide-react";
+import { AtSign, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Contacto</h4>
             <div className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-              <Mail className="h-4 w-4" />
+              <AtSign className="h-4 w-4" />
               <a href="mailto:hola@nocodestudio.com">hola@nocodestudio.com</a>
             </div>
           </div>

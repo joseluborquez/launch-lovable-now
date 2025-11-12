@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const testimonials = [
   {
@@ -34,7 +34,7 @@ const Testimonials = () => {
               key={index}
               className="p-8 bg-card border-border hover:shadow-[var(--shadow-card)] transition-all duration-300"
             >
-              <Quote className="h-10 w-10 text-primary/30 mb-6" />
+              <MessageSquare className="h-10 w-10 text-primary/30 mb-6" />
               <blockquote className="text-xl font-medium mb-6 leading-relaxed">
                 "{testimonial.quote}"
               </blockquote>

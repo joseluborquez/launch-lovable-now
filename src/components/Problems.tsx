@@ -1,46 +1,46 @@
 import { Card } from "@/components/ui/card";
 import {
-  Code2,
-  Clock,
-  DollarSign,
-  TrendingUp,
-  Shield,
-  Palette,
+  Sparkles,
+  Timer,
+  Wallet,
+  Rocket,
+  ShieldCheck,
+  Layers,
 } from "lucide-react";
 
 const problems = [
   {
-    icon: Code2,
+    icon: Sparkles,
     title: "Falta de habilidades técnicas",
     description:
       "Te brindamos la experticia para transformar tu idea en un producto funcional listo para validar.",
   },
   {
-    icon: Clock,
+    icon: Timer,
     title: "Desarrollo lento",
     description:
       "Usamos herramientas No-Code para construir rápido y lanzar tu idea hoy.",
   },
   {
-    icon: DollarSign,
+    icon: Wallet,
     title: "Costos excesivos",
     description:
       "Reducimos costos sin sacrificar calidad gracias a nuestro enfoque No-Code.",
   },
   {
-    icon: TrendingUp,
+    icon: Rocket,
     title: "Escalabilidad",
     description:
       "Construimos en plataformas escalables y bases de datos sólidas para acompañar tu crecimiento.",
   },
   {
-    icon: Shield,
+    icon: ShieldCheck,
     title: "Seguridad",
     description:
       "Cumplimos estándares GDPR, SOC 2 e ISO 27001, alojando los proyectos en infraestructura segura.",
   },
   {
-    icon: Palette,
+    icon: Layers,
     title: "UX/UI pobre",
     description:
       "Diseñamos experiencias claras y funcionales que maximizan conversión y retención.",
