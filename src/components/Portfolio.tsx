@@ -9,16 +9,16 @@ const projects = [
   {
     name: "HumanIA",
     description:
-      "Plataforma de RRHH potenciada por IA para gestión de empleados y automatización de procesos.",
+      "App para entrenamiento personalizado con IA",
     image: humaniaImage,
-    tags: ["IA", "RRHH", "Automatización"],
+    tags: ["Gemini", "Lovable", "Supabase", "Make"],
   },
   {
-    name: "Uruz FitFlow",
+    name: "Uruz GYM",
     description:
-      "Sistema de gestión completo para gimnasios con seguimiento de miembros y clases.",
+      "Software de gestión de clientes para un gimnasio de entrenamiento personalizado",
     image: uruzImage,
-    tags: ["Fitness", "Gestión", "Dashboard"],
+    tags: ["Lovable", "Supabase"],
   },
 ];
 
