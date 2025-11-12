@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import humaniaImage from "@/assets/humania-mockup.jpg";
-import uruzImage from "@/assets/uruz-mockup.jpg";
+import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
+import humaniaImage from "@/assets/humania-mockup.png";
+import uruzImage from "@/assets/uruz-mockup.png";
 
 const projects = [
   {
@@ -61,6 +63,12 @@ const Portfolio = () => {
                     </Badge>
                   ))}
                 </div>
+                <Button 
+                  className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground"
+                >
+                  Ver proyecto
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
               </div>
             </Card>
           ))}
