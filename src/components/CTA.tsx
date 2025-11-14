@@ -3,8 +3,7 @@ import { CalendarCheck, MoveRight } from "lucide-react";
 
 const CTA = () => {
   const handleScheduleMeeting = () => {
-    // Replace with actual Calendly or Make URL
-    window.open("https://calendly.com/tu-link", "_blank");
+    window.open("https://calendly.com/nocodejose/30min", "_blank");
   };
 
   return (
