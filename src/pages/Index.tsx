@@ -7,6 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Tools from "@/components/Tools";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import WelcomeDialog from "@/components/WelcomeDialog";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
+      <WelcomeDialog />
     </div>
   );
 };
