@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
-import heroBackground from "@/assets/hero-background.png";
+import heroBackground from "@/assets/hero-background-network.png";
 const Hero = () => {
   const scrollToCTA = () => {
     const element = document.getElementById("cta");
