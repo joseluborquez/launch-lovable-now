@@ -1,6 +1,7 @@
 import { Search, FileCheck, Layout, Code, Rocket, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import joseProfile from "@/assets/jose-profile.png";
 
 const steps = [
   {
@@ -59,6 +60,17 @@ const Method = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Un proceso claro y transparente, de principio a fin.
           </p>
+        </div>
+
+        {/* Profile Image */}
+        <div className="flex justify-center mb-12">
+          <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20">
+            <img 
+              src={joseProfile} 
+              alt="José - Desarrollador Full Stack" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Desktop view - Horizontal timeline */}
@@ -147,11 +159,12 @@ const Method = () => {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="mt-16 text-center">
+        {/* CTA Button - Moved below image */}
+        <div className="mt-12 text-center">
           <Button 
+            variant="hero"
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             asChild
           >
             <a href="#" className="flex items-center gap-2">
