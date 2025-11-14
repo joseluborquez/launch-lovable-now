@@ -164,13 +164,11 @@ const Method = () => {
           <Button 
             variant="hero"
             size="lg" 
-            className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            asChild
+            className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
+            onClick={() => window.open("https://calendly.com/nocodejose/30min", "_blank")}
           >
-            <a href="#" className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" />
-              Agendar reunión gratis
-            </a>
+            <Calendar className="h-5 w-5" />
+            Agendar reunión gratis
           </Button>
         </div>
       </div>

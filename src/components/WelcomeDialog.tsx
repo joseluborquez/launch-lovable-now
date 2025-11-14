@@ -22,7 +22,7 @@ const WelcomeDialog = () => {
   }, []);
 
   const handleScheduleMeeting = () => {
-    window.open("https://calendly.com/tu-link", "_blank");
+    window.open("https://calendly.com/nocodejose/30min", "_blank");
     setIsOpen(false);
   };
 
