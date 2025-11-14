@@ -1,5 +1,8 @@
 import { Card } from "@/components/ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MessageSquare } from "lucide-react";
+import juanPabloVargas from "@/assets/juan-pablo-vargas.png";
+import juanNunez from "@/assets/juan-nunez.png";
 
 const testimonials = [
   {
@@ -7,12 +10,14 @@ const testimonials = [
       "Gracias a José, ahora gestiono de forma más sencilla mi gimnasio.",
     author: "Juan Pablo Vargas",
     role: "Fundador de Uruz",
+    image: juanPabloVargas,
   },
   {
     quote:
       "Lancé mi idea en 4 semanas y pude validarla en el mercado, me explotó la cabeza.",
     author: "Juan Núñez",
     role: "Cofundador de HumanIA",
+    image: juanNunez,
   },
 ];
 
@@ -38,9 +43,15 @@ const Testimonials = () => {
               <blockquote className="text-xl font-medium mb-6 leading-relaxed">
                 "{testimonial.quote}"
               </blockquote>
-              <div className="border-t border-border pt-6">
-                <p className="font-semibold text-lg">{testimonial.author}</p>
-                <p className="text-muted-foreground">{testimonial.role}</p>
+              <div className="border-t border-border pt-6 flex items-center gap-4">
+                <Avatar className="h-12 w-12">
+                  <AvatarImage src={testimonial.image} alt={testimonial.author} />
+                  <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                </Avatar>
+                <div>
+                  <p className="font-semibold text-lg">{testimonial.author}</p>
+                  <p className="text-muted-foreground">{testimonial.role}</p>
+                </div>
               </div>
             </Card>
           ))}
