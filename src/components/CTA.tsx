@@ -25,7 +25,8 @@ const CTA = () => {
               onClick={handleScheduleMeeting}
               className="group"
             >
-              Agenda tu reunión gratuita
+              <span className="hidden sm:inline">Agenda tu reunión gratuita</span>
+              <span className="sm:hidden">Agenda reunión</span>
               <MoveRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
