@@ -19,7 +19,7 @@ const problems = [
     icon: Timer,
     title: "Desarrollo lento",
     description:
-      "Uso herramientas No-Code para construir rápido y lanzar tu idea hoy.",
+      "Uso herramientas No-Code para construir rápido y lanzar tu idea en semanas.",
   },
   {
     icon: Wallet,
