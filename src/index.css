@@ -150,4 +150,20 @@ All colors MUST be HSL.
   .animate-scroll-infinite {
     animation: scroll-infinite 20s linear infinite;
   }
+
+  /* Efecto de deslizamiento para botones CTA */
+  .btn-slide {
+    @apply relative overflow-hidden z-0;
+  }
+
+  .btn-slide::before {
+    content: '';
+    @apply absolute inset-0 bg-primary/20 -z-10;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-slide:hover::before {
+    transform: translateX(0);
+  }
 }
