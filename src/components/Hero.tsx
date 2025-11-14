@@ -2,13 +2,8 @@ import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background-network.png";
 const Hero = () => {
-  const scrollToCTA = () => {
-    const element = document.getElementById("cta");
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth"
-      });
-    }
+  const handleScheduleMeeting = () => {
+    window.open("https://calendly.com/nocodejose/30min", "_blank");
   };
   return <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
@@ -33,7 +28,7 @@ const Hero = () => {
               ahorrando costos y tiempos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" onClick={scrollToCTA} className="group">
+              <Button variant="hero" size="xl" onClick={handleScheduleMeeting} className="group">
                 Agenda una reunión gratuita
                 <MoveRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
