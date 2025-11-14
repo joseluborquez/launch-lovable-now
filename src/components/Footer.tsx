@@ -1,14 +1,10 @@
 import { AtSign, Linkedin, Twitter } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/30 border-t border-border">
+  return <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/30 border-t border-border">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              NoCode Studio
-            </h3>
+            <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">NoCode Jose</h3>
             <p className="text-muted-foreground">
               Transformamos ideas en productos digitales exitosos sin código.
             </p>
@@ -23,20 +19,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Síguenos</h4>
             <div className="flex gap-4">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
@@ -46,8 +32,6 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} NoCode Studio. Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
