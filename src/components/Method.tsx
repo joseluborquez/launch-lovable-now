@@ -159,8 +159,8 @@ const Method = () => {
           </div>
         </div>
 
-        {/* CTA Button - Moved below image */}
-        <div className="mt-12 text-center">
+        {/* CTA Button - Centered below workflow */}
+        <div className="mt-12 flex justify-center">
           <Button 
             variant="hero"
             size="lg" 
