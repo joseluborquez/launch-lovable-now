@@ -13,37 +13,37 @@ const problems = [
     icon: Sparkles,
     title: "Falta de habilidades técnicas",
     description:
-      "Te brindamos la experticia para transformar tu idea en un producto funcional listo para validar.",
+      "Te brindo la experticia para transformar tu idea en un producto funcional listo para validar.",
   },
   {
     icon: Timer,
     title: "Desarrollo lento",
     description:
-      "Usamos herramientas No-Code para construir rápido y lanzar tu idea hoy.",
+      "Uso herramientas No-Code para construir rápido y lanzar tu idea hoy.",
   },
   {
     icon: Wallet,
     title: "Costos excesivos",
     description:
-      "Reducimos costos sin sacrificar calidad gracias a nuestro enfoque No-Code.",
+      "Reduzco costos sin sacrificar calidad gracias a mi enfoque No-Code.",
   },
   {
     icon: Rocket,
     title: "Escalabilidad",
     description:
-      "Construimos en plataformas escalables y bases de datos sólidas para acompañar tu crecimiento.",
+      "Construyo en plataformas escalables y bases de datos sólidas para acompañar tu crecimiento.",
   },
   {
     icon: ShieldCheck,
     title: "Seguridad",
     description:
-      "Cumplimos estándares GDPR, SOC 2 e ISO 27001, alojando los proyectos en infraestructura segura.",
+      "Cumplo estándares GDPR, SOC 2 e ISO 27001, alojando los proyectos en infraestructura segura.",
   },
   {
     icon: Layers,
     title: "UX/UI pobre",
     description:
-      "Diseñamos experiencias claras y funcionales que maximizan conversión y retención.",
+      "Diseño experiencias claras y funcionales que maximizan conversión y retención.",
   },
 ];
 
