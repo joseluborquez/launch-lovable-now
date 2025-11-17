@@ -8,6 +8,7 @@ import lovableLogo from "@/assets/lovable-logo.png";
 import supabaseLogo from "@/assets/supabase-logo.png";
 import makeLogo from "@/assets/make-logo.png";
 import airtableLogo from "@/assets/airtable-logo.png";
+import geminiLogo from "@/assets/gemini-logo.png";
 import headerBg from "@/assets/project-header-bg.png";
 
 const toolLogos: { [key: string]: string } = {
@@ -15,7 +16,7 @@ const toolLogos: { [key: string]: string } = {
   "Supabase": supabaseLogo,
   "Make": makeLogo,
   "Airtable": airtableLogo,
-  "Gemini": lovableLogo, // Placeholder, reemplazar con logo real si está disponible
+  "Gemini": geminiLogo,
 };
 
 const projectsData: { [key: string]: any } = {
