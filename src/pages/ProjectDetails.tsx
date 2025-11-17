@@ -22,7 +22,7 @@ const toolLogos: { [key: string]: string } = {
 const projectsData: { [key: string]: any } = {
   "humania": {
     name: "HumanIA",
-    description: "App para entrenamiento personalizado con IA",
+    description: "HumanIA es una app de entrenamiento potenciada con Inteligencia artificial para personalizar rutinas de entrenamiento según nivel de experiencia, contexto y equipamiento.",
     image: humaniaImage,
     tags: ["Gemini", "Lovable", "Supabase", "Make"],
     challenge: {

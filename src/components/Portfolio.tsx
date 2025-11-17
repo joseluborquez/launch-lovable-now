@@ -11,7 +11,7 @@ const projects = [
     id: "humania",
     name: "HumanIA",
     description:
-      "App para entrenamiento personalizado con IA",
+      "HumanIA es una app de entrenamiento potenciada con Inteligencia artificial para personalizar rutinas de entrenamiento según nivel de experiencia, contexto y equipamiento.",
     image: humaniaImage,
     tags: ["Gemini", "Lovable", "Supabase", "Make"],
   },
