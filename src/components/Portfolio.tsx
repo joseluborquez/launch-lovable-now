@@ -2,11 +2,13 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import humaniaImage from "@/assets/humania-mockup.png";
 import uruzImage from "@/assets/uruz-mockup.png";
 
 const projects = [
   {
+    id: "humania",
     name: "HumanIA",
     description:
       "App para entrenamiento personalizado con IA",
@@ -14,6 +16,7 @@ const projects = [
     tags: ["Gemini", "Lovable", "Supabase", "Make"],
   },
   {
+    id: "uruz",
     name: "Uruz GYM",
     description:
       "Software de gestión de clientes para un gimnasio de entrenamiento personalizado",
@@ -23,6 +26,8 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
@@ -65,6 +70,7 @@ const Portfolio = () => {
                 </div>
                 <Button 
                   className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => navigate(`/proyecto/${project.id}`)}
                 >
                   Ver proyecto
                   <ExternalLink className="ml-2 h-4 w-4" />
