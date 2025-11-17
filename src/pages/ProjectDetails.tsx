@@ -8,6 +8,7 @@ import lovableLogo from "@/assets/lovable-logo.png";
 import supabaseLogo from "@/assets/supabase-logo.png";
 import makeLogo from "@/assets/make-logo.png";
 import airtableLogo from "@/assets/airtable-logo.png";
+import headerBg from "@/assets/project-header-bg.png";
 
 const toolLogos: { [key: string]: string } = {
   "Lovable": lovableLogo,
@@ -93,16 +94,28 @@ const ProjectDetails = () => {
       </div>
 
       {/* Header Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${headerBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40 z-0" />
+        
+        <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl font-bold">{project.name}</h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <h1 className="text-4xl sm:text-5xl font-bold text-white">{project.name}</h1>
+              <p className="text-xl text-white/90 leading-relaxed">
                 {project.description}
               </p>
             </div>
-            <div className="relative overflow-hidden rounded-lg aspect-video">
+            <div className="relative overflow-hidden rounded-lg aspect-video shadow-2xl">
               <img
                 src={project.image}
                 alt={project.name}
