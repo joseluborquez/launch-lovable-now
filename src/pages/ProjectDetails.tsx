@@ -7,6 +7,10 @@ import humaniaChallenge from "@/assets/humania-challenge.png";
 import humaniaSolution from "@/assets/humania-solution.png";
 import humaniaResults from "@/assets/humania-results.png";
 import uruzImage from "@/assets/uruz-mockup.png";
+import uruzMain from "@/assets/uruz-main.png";
+import uruzChallenge from "@/assets/uruz-challenge.png";
+import uruzSolution from "@/assets/uruz-solution.png";
+import uruzResults from "@/assets/uruz-results.png";
 import lovableLogo from "@/assets/lovable-logo.png";
 import supabaseLogo from "@/assets/supabase-logo.png";
 import makeLogo from "@/assets/make-logo.png";
@@ -47,22 +51,22 @@ const projectsData: { [key: string]: any } = {
   "uruz": {
     name: "Uruz GYM",
     description: "Software de gestión de clientes para un gimnasio de entrenamiento personalizado",
-    image: uruzImage,
+    image: uruzMain,
     tags: ["Lovable", "Supabase"],
     challenge: {
       title: "El Desafío",
       description: "El gimnasio necesitaba una solución completa para gestionar clientes, sesiones de entrenamiento, pagos y seguimiento de progreso. El sistema anterior era manual y consumía demasiado tiempo del equipo de entrenadores.",
-      image: uruzImage,
+      image: uruzChallenge,
     },
     solution: {
       title: "La Solución",
       description: "Creamos un sistema de gestión integral con Lovable y Supabase. Incluye gestión de clientes, calendario de sesiones, seguimiento de pagos, historial de entrenamientos y panel de control con métricas en tiempo real.",
-      image: uruzImage,
+      image: uruzSolution,
     },
     results: {
       title: "Los Resultados",
       description: "Reducción del 70% en tiempo administrativo, mejor experiencia para los clientes con acceso a su información y progreso, y un sistema escalable listo para crecer con el negocio.",
-      image: uruzImage,
+      image: uruzResults,
     },
   },
 };
