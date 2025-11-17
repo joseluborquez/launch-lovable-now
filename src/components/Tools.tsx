@@ -28,14 +28,14 @@ const Tools = () => {
             {tools.map((tool, index) => (
               <div
                 key={`first-${index}`}
-                className="flex flex-col items-center gap-3 mx-8 min-w-[200px]"
+                className="flex flex-col items-center gap-2 mx-4 sm:mx-8 min-w-[120px] sm:min-w-[200px]"
               >
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="h-20 w-auto object-contain"
+                  className="h-12 sm:h-20 w-auto object-contain"
                 />
-                <span className="text-sm font-medium text-muted-foreground">
+                <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                   {tool.name}
                 </span>
               </div>
@@ -44,14 +44,14 @@ const Tools = () => {
             {tools.map((tool, index) => (
               <div
                 key={`second-${index}`}
-                className="flex flex-col items-center gap-3 mx-8 min-w-[200px]"
+                className="flex flex-col items-center gap-2 mx-4 sm:mx-8 min-w-[120px] sm:min-w-[200px]"
               >
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="h-20 w-auto object-contain"
+                  className="h-12 sm:h-20 w-auto object-contain"
                 />
-                <span className="text-sm font-medium text-muted-foreground">
+                <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                   {tool.name}
                 </span>
               </div>
@@ -60,14 +60,14 @@ const Tools = () => {
             {tools.map((tool, index) => (
               <div
                 key={`third-${index}`}
-                className="flex flex-col items-center gap-3 mx-8 min-w-[200px]"
+                className="flex flex-col items-center gap-2 mx-4 sm:mx-8 min-w-[120px] sm:min-w-[200px]"
               >
                 <img
                   src={tool.logo}
                   alt={tool.name}
-                  className="h-20 w-auto object-contain"
+                  className="h-12 sm:h-20 w-auto object-contain"
                 />
-                <span className="text-sm font-medium text-muted-foreground">
+                <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                   {tool.name}
                 </span>
               </div>
