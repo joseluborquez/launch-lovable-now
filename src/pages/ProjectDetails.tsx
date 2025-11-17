@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import humaniaImage from "@/assets/humania-mockup.png";
+import humaniaChallenge from "@/assets/humania-challenge.png";
+import humaniaSolution from "@/assets/humania-solution.png";
+import humaniaResults from "@/assets/humania-results.png";
 import uruzImage from "@/assets/uruz-mockup.png";
 import lovableLogo from "@/assets/lovable-logo.png";
 import supabaseLogo from "@/assets/supabase-logo.png";
@@ -28,17 +31,17 @@ const projectsData: { [key: string]: any } = {
     challenge: {
       title: "El Desafío",
       description: "Los usuarios necesitaban una forma personalizada de entrenar que se adaptara a sus necesidades individuales, objetivos y nivel de experiencia. El desafío era crear una experiencia de entrenamiento verdaderamente personalizada utilizando inteligencia artificial.",
-      image: humaniaImage,
+      image: humaniaChallenge,
     },
     solution: {
       title: "La Solución",
       description: "Desarrollamos una aplicación completa que utiliza IA para generar planes de entrenamiento personalizados. La integración con Gemini permite crear rutinas adaptativas, mientras que Supabase gestiona los datos de usuarios y Make automatiza los flujos de trabajo.",
-      image: humaniaImage,
+      image: humaniaSolution,
     },
     results: {
       title: "Los Resultados",
       description: "Una aplicación funcional lista para el mercado en semanas, con planes de entrenamiento personalizados generados por IA, seguimiento de progreso en tiempo real y una experiencia de usuario fluida y moderna.",
-      image: humaniaImage,
+      image: humaniaResults,
     },
   },
   "uruz": {
