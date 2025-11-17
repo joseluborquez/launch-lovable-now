@@ -148,7 +148,13 @@ All colors MUST be HSL.
   }
 
   .animate-scroll-infinite {
-    animation: scroll-infinite 20s linear infinite;
+    animation: scroll-infinite 10s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-scroll-infinite {
+      animation: scroll-infinite 20s linear infinite;
+    }
   }
 
   /* Efecto de deslizamiento para botones CTA */
