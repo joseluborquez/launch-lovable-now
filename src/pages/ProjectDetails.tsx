@@ -16,6 +16,8 @@ import supabaseLogo from "@/assets/supabase-logo.png";
 import makeLogo from "@/assets/make-logo.png";
 import airtableLogo from "@/assets/airtable-logo.png";
 import geminiLogo from "@/assets/gemini-logo.png";
+import googlemapsLogo from "@/assets/googlemaps-logo.png";
+import crmReciclajeImage from "@/assets/crm-reciclaje-mockup.png";
 import headerBg from "@/assets/project-header-bg.png";
 
 const toolLogos: { [key: string]: string } = {
@@ -24,6 +26,7 @@ const toolLogos: { [key: string]: string } = {
   "Make": makeLogo,
   "Airtable": airtableLogo,
   "Gemini": geminiLogo,
+  "Google Maps": googlemapsLogo,
 };
 
 const projectsData: { [key: string]: any } = {
@@ -67,6 +70,27 @@ const projectsData: { [key: string]: any } = {
       title: "Los Resultados",
       description: "Reducción del 70% en tiempo administrativo, mejor experiencia para los clientes con acceso a su información y progreso, y un sistema escalable listo para crecer con el negocio.",
       image: uruzResults,
+    },
+  },
+  "crm-reciclaje": {
+    name: "CRM Servicio de reciclaje",
+    description: "Plataforma CRM diseñada para empresas que realizan recolección de residuos a domicilio, orientada a optimizar y digitalizar la gestión completa de sus flujos internos. El sistema centraliza la información de clientes, suscripciones, retiros y rutas, permitiendo una operación más eficiente, ordenada y escalable.",
+    image: crmReciclajeImage,
+    tags: ["Make", "Airtable", "Google Maps"],
+    challenge: {
+      title: "El Desafío",
+      description: "Las empresas de reciclaje enfrentaban dificultades para gestionar sus operaciones de forma eficiente. La información de clientes, suscripciones y rutas estaba dispersa, generando pérdida de tiempo y errores en la coordinación de retiros.",
+      image: crmReciclajeImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Desarrollamos un CRM completo utilizando Airtable como base de datos, Make para automatizar flujos de trabajo, y Google Maps para optimizar las rutas de recolección. El sistema permite gestionar clientes, programar retiros y visualizar rutas de forma integrada.",
+      image: crmReciclajeImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Una plataforma centralizada que permite gestionar toda la operación desde un solo lugar, reduciendo tiempos administrativos, mejorando la coordinación de rutas y escalando el negocio de forma ordenada.",
+      image: crmReciclajeImage,
     },
   },
 };

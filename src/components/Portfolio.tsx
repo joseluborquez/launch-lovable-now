@@ -5,6 +5,7 @@ import { ExternalLink } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import humaniaImage from "@/assets/humania-mockup.png";
 import uruzImage from "@/assets/uruz-mockup.png";
+import crmReciclajeImage from "@/assets/crm-reciclaje-mockup.png";
 
 const projects = [
   {
@@ -22,6 +23,14 @@ const projects = [
       "Software de gestión de clientes para un gimnasio de entrenamiento personalizado",
     image: uruzImage,
     tags: ["Lovable", "Supabase"],
+  },
+  {
+    id: "crm-reciclaje",
+    name: "CRM Servicio de reciclaje",
+    description:
+      "Plataforma CRM diseñada para empresas que realizan recolección de residuos a domicilio, orientada a optimizar y digitalizar la gestión completa de sus flujos internos. El sistema centraliza la información de clientes, suscripciones, retiros y rutas, permitiendo una operación más eficiente, ordenada y escalable.",
+    image: crmReciclajeImage,
+    tags: ["Make", "Airtable", "Google Maps"],
   },
 ];
 
