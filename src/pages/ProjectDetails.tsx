@@ -19,6 +19,14 @@ import geminiLogo from "@/assets/gemini-logo.png";
 import googlemapsLogo from "@/assets/googlemaps-logo.png";
 import crmReciclajeImage from "@/assets/crm-reciclaje-mockup.png";
 import headerBg from "@/assets/project-header-bg.png";
+import almenisImage from "@/assets/almenis-login.png";
+import raulspeedImage from "@/assets/raulspeed-hero.png";
+import dilogicImage from "@/assets/dilogic-hero.png";
+import teayudoImage from "@/assets/teayudo-thumbnail.png";
+import leadToCustomerImage from "@/assets/leadtocustomer-login.png";
+import claudeLogo from "@/assets/claude-logo.svg";
+import vercelLogo from "@/assets/vercel-logo.svg";
+import kapsoLogo from "@/assets/kapso-logo.png";
 
 const toolLogos: { [key: string]: string } = {
   "Lovable": lovableLogo,
@@ -27,9 +35,117 @@ const toolLogos: { [key: string]: string } = {
   "Airtable": airtableLogo,
   "Gemini": geminiLogo,
   "Google Maps": googlemapsLogo,
+  "Claude Code": claudeLogo,
+  "Vercel": vercelLogo,
+  "Kapso": kapsoLogo,
 };
 
 const projectsData: { [key: string]: any } = {
+  "almenis": {
+    name: "Almenis",
+    description: "Web app de cierre de caja para un centro de especialidades médicas: cada profesional de salud accede con su propio perfil y ve sus ganancias diarias de forma automática.",
+    image: almenisImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+    challenge: {
+      title: "El Desafío",
+      description: "Almenis, centro de especialidades médicas, cerraba caja a mano en cuadernos — un proceso que no escalaba y dependía de cada profesional. Tampoco fue posible integrar directamente con la API de Reservo, el software de agenda que ya usaban, lo que obligó a buscar otra vía de entrada de datos.",
+      image: almenisImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Construimos una web app con perfil y credenciales propias para cada profesional de salud, donde el cierre de caja se genera a partir de la agenda del día exportada en PDF desde Reservo — sin depender de una integración directa con su API.",
+      image: almenisImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Cada profesional ve hoy sus ganancias diarias de forma digital y automática, con un cierre de caja que ya no depende de cuadernos ni de cálculos manuales — un proceso escalable para todo el centro.",
+      image: almenisImage,
+    },
+  },
+  "raulspeed": {
+    name: "RaulSpeed",
+    description: "Web app que permite cotizar y comprar repuestos japoneses originales, con pago a través de distintas pasarelas, ingresando solo el número de parte OEM.",
+    image: raulspeedImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+    challenge: {
+      title: "El Desafío",
+      description: "RaulSpeed recibía y cotizaba solicitudes de repuestos por WhatsApp de forma manual. A eso se sumó un desafío técnico mayor: no existía una base de datos estructurada de repuestos ni acceso directo a los catálogos japoneses de origen.",
+      image: raulspeedImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Construimos una web app donde el cliente ingresa el número de parte OEM, recibe la cotización y compra directamente a través de distintas pasarelas de pago. Con Claude Code se construyó además una base de datos propia de repuestos a partir de catálogos japoneses, resolviendo el acceso a la información de origen.",
+      image: raulspeedImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Hoy los clientes cotizan y compran en un solo lugar, sin pasar por WhatsApp. Toda la información de pedidos y solicitudes llega directamente al perfil administrador de RaulSpeed.",
+      image: raulspeedImage,
+    },
+  },
+  "dilogic": {
+    name: "Dilogic",
+    description: "Web app que automatiza la generación de guías de despacho para una empresa de logística, conectada directamente con su ERP.",
+    image: dilogicImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+    challenge: {
+      title: "El Desafío",
+      description: "Dilogic, empresa de logística, generaba cientos de guías de despacho de forma manual en su ERP — una tarea que tomaba días en completarse.",
+      image: dilogicImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Construimos una plataforma web donde se sube la solicitud de pedido y, mediante conexión directa vía API con su ERP, las guías de despacho se generan de forma automática.",
+      image: dilogicImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Una tarea que antes tomaba días ahora se resuelve en horas, sin intervención manual en el ERP.",
+      image: dilogicImage,
+    },
+  },
+  "teayudo": {
+    name: "Te Ayudo",
+    description: "Agente de IA que responde en WhatsApp y conecta a los clientes con el profesional correspondiente según su necesidad — por ejemplo, gasfitería.",
+    image: teayudoImage,
+    tags: ["Claude Code", "Supabase", "Kapso"],
+    challenge: {
+      title: "El Desafío",
+      description: "Te Ayudo respondía los mensajes de WhatsApp de forma manual — una labor que tomaba horas y hacía perder clientes por respuestas lentas.",
+      image: teayudoImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Construimos un agente de IA sobre Kapso que vive en WhatsApp, entiende la necesidad específica del cliente (por ejemplo, gasfitería) y lo vincula automáticamente con el profesional correspondiente.",
+      image: teayudoImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Los mensajes que antes tardaban horas en responderse ahora se resuelven en minutos, sin perder clientes por demora.",
+      image: teayudoImage,
+    },
+  },
+  "lead-to-customer": {
+    name: "Lead to Customer",
+    description: "Sistema automatizado de ventas que responde a los leads en minutos, 24/7, y hace seguimiento hasta cerrar la venta.",
+    image: leadToCustomerImage,
+    tags: ["Claude Code", "Supabase", "Vercel", "Kapso"],
+    challenge: {
+      title: "El Desafío",
+      description: "Muchos negocios pierden tiempo respondiendo consultas manualmente — varias son solo curiosos — y las respuestas lentas hacen que los leads reales se vayan con la competencia.",
+      image: leadToCustomerImage,
+    },
+    solution: {
+      title: "La Solución",
+      description: "Construimos un sistema automatizado sobre Kapso, conectado a WhatsApp, que responde a los leads en minutos, agenda llamadas de venta, hace seguimiento y califica a cada lead.",
+      image: leadToCustomerImage,
+    },
+    results: {
+      title: "Los Resultados",
+      description: "Respuestas a consultas en menos de 2 minutos, con calificación automática de leads para agendar solo con clientes potenciales reales — y más ventas cerradas.",
+      image: leadToCustomerImage,
+    },
+  },
   "humania": {
     name: "HumanIA",
     description: "HumanIA es una app de entrenamiento potenciada con Inteligencia artificial para personalizar rutinas de entrenamiento según nivel de experiencia, contexto y equipamiento.",

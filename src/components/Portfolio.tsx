@@ -6,8 +6,53 @@ import { useNavigate } from "react-router-dom";
 import humaniaImage from "@/assets/humania-mockup.png";
 import uruzImage from "@/assets/uruz-mockup.png";
 import crmReciclajeImage from "@/assets/crm-reciclaje-mockup.png";
+import almenisImage from "@/assets/almenis-login.png";
+import raulspeedImage from "@/assets/raulspeed-hero.png";
+import dilogicImage from "@/assets/dilogic-hero.png";
+import teayudoImage from "@/assets/teayudo-thumbnail.png";
+import leadToCustomerImage from "@/assets/leadtocustomer-login.png";
 
 const projects = [
+  {
+    id: "almenis",
+    name: "Almenis",
+    description:
+      "Web app de cierre de caja para un centro de especialidades médicas: cada profesional de salud accede con su propio perfil y ve sus ganancias diarias de forma automática.",
+    image: almenisImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+  },
+  {
+    id: "raulspeed",
+    name: "RaulSpeed",
+    description:
+      "Web app que permite cotizar y comprar repuestos japoneses originales, con pago a través de distintas pasarelas, ingresando solo el número de parte OEM.",
+    image: raulspeedImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+  },
+  {
+    id: "dilogic",
+    name: "Dilogic",
+    description:
+      "Web app que automatiza la generación de guías de despacho para una empresa de logística, conectada directamente con su ERP.",
+    image: dilogicImage,
+    tags: ["Claude Code", "Supabase", "Vercel"],
+  },
+  {
+    id: "teayudo",
+    name: "Te Ayudo",
+    description:
+      "Agente de IA que responde en WhatsApp y conecta a los clientes con el profesional correspondiente según su necesidad — por ejemplo, gasfitería.",
+    image: teayudoImage,
+    tags: ["Claude Code", "Supabase", "Kapso"],
+  },
+  {
+    id: "lead-to-customer",
+    name: "Lead to Customer",
+    description:
+      "Sistema automatizado de ventas que responde a los leads en minutos, 24/7, y hace seguimiento hasta cerrar la venta.",
+    image: leadToCustomerImage,
+    tags: ["Claude Code", "Supabase", "Vercel", "Kapso"],
+  },
   {
     id: "humania",
     name: "HumanIA",
@@ -45,7 +90,7 @@ const Portfolio = () => {
             Proyectos destacados
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Soluciones reales construidas con herramientas No-Code.
+            Software real, funcionando en producción — para empresas en LATAM.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

@@ -12,11 +12,11 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5 rounded-3xl p-12 sm:p-16 border border-primary/20">
           <CalendarCheck className="h-16 w-16 text-primary mx-auto" />
           <h2 className="text-4xl sm:text-5xl font-bold">
-            ¿Listo para lanzar tu producto?
+            ¿Listo para resolver tu problema con software a medida?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Agenda una reunión gratuita de 30 minutos y descubre cómo podemos
-            ayudarte a transformar tu idea en realidad.
+            ayudarte — sin la fricción de una agencia tradicional.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -31,7 +31,7 @@ const CTA = () => {
             </Button>
           </div>
           <p className="text-sm text-muted-foreground">
-            ✅ Sin compromiso • ⏱️ 30 minutos • 💡 Ideas claras
+            ✅ Sin compromiso • ⏱️ 30 minutos • 💡 Diagnóstico claro
           </p>
         </div>
       </div>

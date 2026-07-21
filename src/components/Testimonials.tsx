@@ -30,7 +30,7 @@ const Testimonials = () => {
             Lo que dicen mis clientes
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Historias reales de emprendedores que confiaron en mí.
+            Historias reales de negocios que confiaron en mí.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

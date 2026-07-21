@@ -1,13 +1,13 @@
-import lovableLogo from "@/assets/lovable-logo.png";
-import airtableLogo from "@/assets/airtable-logo.png";
+import claudeLogo from "@/assets/claude-logo.svg";
 import supabaseLogo from "@/assets/supabase-logo.png";
-import makeLogo from "@/assets/make-logo.png";
+import vercelLogo from "@/assets/vercel-logo.svg";
+import kapsoLogo from "@/assets/kapso-logo.png";
 
 const tools = [
-  { name: "Lovable", logo: lovableLogo },
-  { name: "Airtable", logo: airtableLogo },
+  { name: "Claude Code", logo: claudeLogo },
   { name: "Supabase", logo: supabaseLogo },
-  { name: "Make", logo: makeLogo },
+  { name: "Vercel", logo: vercelLogo },
+  { name: "Kapso", logo: kapsoLogo },
 ];
 
 const Tools = () => {
@@ -16,10 +16,10 @@ const Tools = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Herramientas que uso
+            El stack detrás del software
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Las mejores plataformas No-Code para crear productos escalables.
+            Infraestructura propia, sin lock-in — acelerada por IA.
           </p>
         </div>
         <div className="relative">

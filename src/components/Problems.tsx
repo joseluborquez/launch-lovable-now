@@ -10,40 +10,40 @@ import {
 
 const problems = [
   {
-    icon: Sparkles,
-    title: "Falta de habilidades técnicas",
-    description:
-      "Te brindo la experticia para transformar tu idea en un producto funcional listo para validar.",
-  },
-  {
     icon: Timer,
-    title: "Desarrollo lento",
+    title: "Respuesta lenta a leads",
     description:
-      "Uso herramientas No-Code para construir rápido y lanzar tu idea en semanas.",
+      "Pierdes prospectos ante la competencia por no responder a tiempo.",
   },
   {
-    icon: Wallet,
-    title: "Costos excesivos",
+    icon: Sparkles,
+    title: "Procesos operativos manuales",
     description:
-      "Reduzco costos sin sacrificar calidad gracias a mi enfoque No-Code.",
-  },
-  {
-    icon: Rocket,
-    title: "Escalabilidad",
-    description:
-      "Construyo en plataformas escalables y bases de datos sólidas para acompañar tu crecimiento.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Seguridad",
-    description:
-      "Cumplo estándares GDPR, SOC 2 e ISO 27001, alojando los proyectos en infraestructura segura.",
+      "Cierre de caja, cotizaciones, despachos que consumen horas del equipo.",
   },
   {
     icon: Layers,
-    title: "UX/UI pobre",
+    title: "Software genérico que no calza",
     description:
-      "Diseño experiencias claras y funcionales que maximizan conversión y retención.",
+      "Herramientas de plantilla que no se ajustan a tu operación específica.",
+  },
+  {
+    icon: Wallet,
+    title: "Agencias tradicionales, fuera de presupuesto",
+    description:
+      "Cotizan $10-50K+ USD y meses de espera para un problema urgente.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Dependencia de plataformas de terceros",
+    description:
+      "Límites de configuración, lock-in, sin dueño real del código.",
+  },
+  {
+    icon: Rocket,
+    title: "Falta de seguimiento estructurado",
+    description:
+      "Prospectos que se enfrían sin un sistema que los nutra.",
   },
 ];
 
@@ -53,11 +53,10 @@ const Problems = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold">
-            ¿Problemas para construir tu idea de producto?
+            ¿Tu negocio pierde tiempo o dinero por procesos manuales?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Entiendo los desafíos que enfrentas. Por eso desarrollo
-            soluciones específicas.
+            Estos son los problemas que más resuelvo.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

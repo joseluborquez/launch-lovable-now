@@ -30,7 +30,7 @@ const steps = [
     number: "04",
     title: "Desarrollo",
     description:
-      "Construcción del producto (frontend + backend) con reuniones semanales de feedback.",
+      "Construcción del producto (frontend + backend) acelerada por IA, con reuniones semanales de feedback.",
     icon: Code,
     color: "from-pink-500 to-pink-600",
   },
@@ -55,10 +55,11 @@ const Method = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl sm:text-5xl font-bold">
-            Cómo trabajamos juntos
+            De tu problema a software funcionando
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Un proceso claro y transparente, de principio a fin.
+            Un proceso claro, acelerado por IA — sin la fricción de una
+            agencia tradicional.
           </p>
         </div>
 
@@ -67,7 +68,7 @@ const Method = () => {
           <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20">
             <img 
               src={joseProfile} 
-              alt="José - Desarrollador Full Stack" 
+              alt="José Luis Bórquez — Software a medida acelerado por IA"
               className="w-full h-full object-cover"
             />
           </div>

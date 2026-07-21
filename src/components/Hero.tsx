@@ -17,15 +17,16 @@ const Hero = () => {
         <div className="max-w-3xl">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-white">
-              Lanza tu app o SaaS{" "}
+              Software a medida{" "}
               <span className="text-white">
                 en semanas, no meses
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-white leading-relaxed">
-              Ayudo a emprendedores digitales a convertir sus ideas en productos
-              reales con herramientas No-Code e Inteligencia Artificial,
-              ahorrando costos y tiempos.
+              Software a medida para empresas en LATAM: web, apps internas,
+              agentes de WhatsApp y sistemas de ventas — acelerado por IA, sin
+              la fricción ni el costo de una agencia de desarrollo
+              tradicional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" onClick={handleScheduleMeeting} className="group">
