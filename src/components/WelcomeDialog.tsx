@@ -34,16 +34,17 @@ const WelcomeDialog = () => {
             <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-xl ring-4 ring-primary/20">
               <img
                 src={joseProfile}
-                alt="José - Desarrollador Full Stack"
+                alt="José Luis Bórquez — Software a medida acelerado por IA"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           <DialogTitle className="text-2xl text-center">
-            ¿No estás seguro de cómo desarrollar tu idea?
+            ¿Necesitas resolver un problema operativo?
           </DialogTitle>
           <DialogDescription className="text-center text-base pt-2">
-            Ayudo a personas como tú a validar su idea en el mercado.
+            Construyo software a medida para empresas en LATAM — sin la
+            fricción de una agencia tradicional.
           </DialogDescription>
         </DialogHeader>
         <div className="flex justify-center pt-4">
