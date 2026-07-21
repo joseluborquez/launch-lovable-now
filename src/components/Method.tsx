@@ -166,7 +166,7 @@ const Method = () => {
             variant="hero"
             size="lg" 
             className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
-            onClick={() => window.open("https://calendly.com/nocodejose/30min", "_blank")}
+            onClick={() => window.open("https://calendar.app.google/X8qocHVj3YaRRRaH8", "_blank")}
           >
             <Calendar className="h-5 w-5" />
             Agendar reunión gratis

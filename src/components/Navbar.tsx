@@ -30,7 +30,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("testimonials")} className="text-foreground hover:text-primary transition-colors">
               Testimonios
             </button>
-            <Button variant="cta" size="default" onClick={() => window.open("https://calendly.com/nocodejose/30min", "_blank")}>
+            <Button variant="cta" size="default" onClick={() => window.open("https://calendar.app.google/X8qocHVj3YaRRRaH8", "_blank")}>
               Agenda tu reunión
             </Button>
           </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("testimonials")} className="block w-full text-left text-foreground hover:text-primary transition-colors">
               Testimonios
             </button>
-            <Button variant="cta" size="default" className="w-full" onClick={() => window.open("https://calendly.com/nocodejose/30min", "_blank")}>
+            <Button variant="cta" size="default" className="w-full" onClick={() => window.open("https://calendar.app.google/X8qocHVj3YaRRRaH8", "_blank")}>
               Agenda tu reunión
             </Button>
           </div>}

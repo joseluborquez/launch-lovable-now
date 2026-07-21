@@ -3,7 +3,7 @@ import { MoveRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background-network.png";
 const Hero = () => {
   const handleScheduleMeeting = () => {
-    window.open("https://calendly.com/nocodejose/30min", "_blank");
+    window.open("https://calendar.app.google/X8qocHVj3YaRRRaH8", "_blank");
   };
   return <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[90vh] flex items-center">
       <div className="absolute inset-0 z-0">
