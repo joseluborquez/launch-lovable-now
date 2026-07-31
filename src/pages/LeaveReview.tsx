@@ -160,8 +160,8 @@ const LeaveReview = () => {
         <div className="space-y-4 mb-10">
           <h1 className="text-4xl sm:text-5xl font-bold">Deja tu reseña</h1>
           <p className="text-lg text-muted-foreground">
-            Cuéntame cómo te fue trabajando conmigo. La publico en el sitio
-            después de revisarla.
+            Cuéntame cómo fue trabajar conmigo, esto aparecerá en mi página
+            web.
           </p>
         </div>
 
