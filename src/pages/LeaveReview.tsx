@@ -91,13 +91,6 @@ const LeaveReview = () => {
   };
 
   const onSubmit = async (values: ReviewValues) => {
-    if (!supabase) {
-      toast.error(
-        "El formulario todavía no está conectado. Escríbeme y con gusto publico tu reseña.",
-      );
-      return;
-    }
-
     try {
       let photoUrl: string | null = null;
 

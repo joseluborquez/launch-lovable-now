@@ -18,7 +18,7 @@ const localPhotos: Record<string, string> = {
   "Juan Núñez": juanNunez,
 };
 
-/** Se muestran mientras el backend no esté configurado o no devuelva reseñas. */
+/** Se muestran si la base todavía no tiene reseñas aprobadas. */
 const fallbackTestimonials: Testimonial[] = [
   {
     id: "seed-juan-pablo-vargas",
@@ -53,8 +53,6 @@ const initials = (name: string) =>
     .slice(0, 2);
 
 const fetchTestimonials = async (): Promise<Testimonial[]> => {
-  if (!supabase) return [];
-
   const { data, error } = await supabase
     .from("testimonials")
     .select("id, created_at, name, role, quote, rating, photo_url, approved")
@@ -69,7 +67,6 @@ const Testimonials = () => {
   const { data } = useQuery({
     queryKey: ["testimonials"],
     queryFn: fetchTestimonials,
-    enabled: supabase !== null,
     staleTime: 5 * 60 * 1000,
   });
 
