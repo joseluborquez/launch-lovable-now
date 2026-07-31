@@ -25,6 +25,7 @@ const fallbackTestimonials: Testimonial[] = [
     created_at: "",
     name: "Juan Pablo Vargas",
     role: "Fundador de Uruz",
+    email: null,
     quote: "Gracias a José, ahora gestiono de forma más sencilla mi gimnasio.",
     rating: 5,
     photo_url: null,
@@ -35,6 +36,7 @@ const fallbackTestimonials: Testimonial[] = [
     created_at: "",
     name: "Juan Núñez",
     role: "Cofundador de HumanIA",
+    email: null,
     quote:
       "Lancé mi idea en 4 semanas y pude validarla en el mercado, me explotó la cabeza.",
     rating: 5,
