@@ -20,10 +20,9 @@ import {
 } from "@/components/ui/form";
 import { toast } from "sonner";
 import StarRating from "@/components/StarRating";
-import {
-  supabase,
-  TESTIMONIAL_PHOTOS_BUCKET,
-} from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
+
+const TESTIMONIAL_PHOTOS_BUCKET = "testimonial-photos";
 
 const MAX_PHOTO_BYTES = 2 * 1024 * 1024;
 const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"];
@@ -116,7 +115,7 @@ const LeaveReview = () => {
           .getPublicUrl(path).data.publicUrl;
       }
 
-      const { error } = await supabase.from("testimonials").insert({
+      const { error } = await supabase.from("testimonials" as any).insert({
         name: values.name,
         role: values.role || null,
         email: values.email || null,
