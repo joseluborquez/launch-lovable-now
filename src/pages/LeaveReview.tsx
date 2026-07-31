@@ -115,7 +115,7 @@ const LeaveReview = () => {
           .getPublicUrl(path).data.publicUrl;
       }
 
-      const { error } = await supabase.from("testimonials" as any).insert({
+      const { error } = await supabase.from("testimonials").insert({
         name: values.name,
         role: values.role || null,
         email: values.email || null,

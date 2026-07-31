@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Cualquiera puede ver fotos de reseñas" ON storage.objects;
