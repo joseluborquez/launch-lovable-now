@@ -68,7 +68,7 @@ const fetchTestimonials = async (): Promise<Testimonial[]> => {
     .order("created_at", { ascending: false });
 
   if (error) throw error;
-  return (data ?? []) as Testimonial[];
+  return ((data ?? []) as unknown) as Testimonial[];
 };
 
 const Testimonials = () => {
