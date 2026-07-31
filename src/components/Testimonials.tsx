@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MessageSquare } from "lucide-react";
 import StarRating from "@/components/StarRating";
+import { useAutoScroll } from "@/hooks/useAutoScroll";
 import { supabase } from "@/integrations/supabase/client";
 import type { Tables } from "@/integrations/supabase/types";
 import juanPabloVargas from "@/assets/juan-pablo-vargas.png";
@@ -107,6 +108,8 @@ const Testimonials = () => {
     return set;
   }, [testimonials]);
 
+  const trackRef = useAutoScroll<HTMLDivElement>(24, [marqueeSet]);
+
   return (
     <section
       id="testimonials"
@@ -121,19 +124,24 @@ const Testimonials = () => {
             Historias reales de negocios que confiaron en mí.
           </p>
         </div>
-        <div className="relative">
-          <div className="flex items-stretch animate-scroll-testimonials">
-            {["first", "second", "third"].map((copy) => (
-              <div key={copy} className="flex items-stretch" aria-hidden={copy !== "first"}>
-                {marqueeSet.map((testimonial, index) => (
-                  <TestimonialCard
-                    key={`${copy}-${testimonial.id}-${index}`}
-                    testimonial={testimonial}
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
+        <div
+          ref={trackRef}
+          className="flex items-stretch overflow-x-auto no-scrollbar [overscroll-behavior-x:contain] [scroll-behavior:auto]"
+        >
+          {["first", "second", "third"].map((copy) => (
+            <div
+              key={copy}
+              className="flex items-stretch"
+              aria-hidden={copy !== "first"}
+            >
+              {marqueeSet.map((testimonial, index) => (
+                <TestimonialCard
+                  key={`${copy}-${testimonial.id}-${index}`}
+                  testimonial={testimonial}
+                />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>
