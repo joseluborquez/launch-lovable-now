@@ -236,7 +236,7 @@ const LeaveReview = () => {
               />
 
               <FormItem>
-                <FormLabel>Foto de perfil</FormLabel>
+                <FormLabel>Foto de perfil o logo de la empresa</FormLabel>
                 <div className="flex items-center gap-4">
                   <Avatar className="h-16 w-16">
                     <AvatarImage src={photoPreview ?? undefined} alt="" />
@@ -251,7 +251,7 @@ const LeaveReview = () => {
                       size="sm"
                       onClick={() => fileInputRef.current?.click()}
                     >
-                      {photo ? "Cambiar foto" : "Subir foto"}
+                      {photo ? "Cambiar imagen" : "Subir imagen"}
                     </Button>
                     <p className="text-xs text-muted-foreground">
                       Opcional · JPG, PNG o WebP · máx. 2 MB
