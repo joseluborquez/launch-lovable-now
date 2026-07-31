@@ -86,10 +86,10 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl sm:text-5xl font-bold">
+          <h2 className="text-3xl sm:text-4xl font-bold">
             Proyectos destacados
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Software real, funcionando en producción — para empresas en LATAM.
           </p>
         </div>
