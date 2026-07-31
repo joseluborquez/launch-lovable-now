@@ -113,7 +113,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden"
+      className="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div className="container mx-auto">
         <div className="text-center mb-12">
