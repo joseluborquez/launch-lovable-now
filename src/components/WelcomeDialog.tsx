@@ -43,8 +43,7 @@ const WelcomeDialog = () => {
             ¿Necesitas resolver un problema operativo?
           </DialogTitle>
           <DialogDescription className="text-center text-base pt-2">
-            Construyo software a medida para empresas en LATAM — sin la
-            fricción de una agencia tradicional.
+            Construyo software a medida, automatizaciones y agentes IA.
           </DialogDescription>
         </DialogHeader>
         <div className="flex justify-center pt-4">
