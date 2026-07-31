@@ -19,7 +19,7 @@ const Tools = () => {
             El stack detrás del software
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Infraestructura propia, sin lock-in — acelerada por IA.
+            Infraestructura y código propio del cliente.
           </p>
         </div>
         <div className="relative">

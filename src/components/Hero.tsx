@@ -23,10 +23,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-white leading-relaxed">
-              Software a medida para empresas en LATAM: web, apps internas,
-              agentes de WhatsApp y sistemas de ventas — acelerado por IA, sin
-              la fricción ni el costo de una agencia de desarrollo
-              tradicional.
+              Software a medida: web apps internas, automatizaciones y agentes
+              de IA para WhatsApp, sin la demora ni el costo de una agencia de
+              desarrollo tradicional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" onClick={handleScheduleMeeting} className="group">

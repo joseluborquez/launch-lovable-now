@@ -58,8 +58,7 @@ const Method = () => {
             De tu problema a software funcionando
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Un proceso claro, acelerado por IA — sin la fricción de una
-            agencia tradicional.
+            Un proceso claro, acelerado por IA.
           </p>
         </div>
 
