@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -61,6 +62,33 @@ const fetchTestimonials = async (): Promise<Testimonial[]> => {
   return (data ?? []) as Testimonial[];
 };
 
+const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
+  <Card className="w-[300px] sm:w-[420px] shrink-0 mx-3 sm:mx-4 p-8 bg-card border-border flex flex-col">
+    <MessageSquare className="h-10 w-10 text-primary/30 mb-6" />
+    {testimonial.rating ? (
+      <StarRating value={testimonial.rating} className="mb-4" />
+    ) : null}
+    <blockquote className="text-lg sm:text-xl font-medium mb-6 leading-relaxed flex-1">
+      "{testimonial.quote}"
+    </blockquote>
+    <div className="border-t border-border pt-6 flex items-center gap-4">
+      <Avatar className="h-12 w-12">
+        <AvatarImage
+          src={testimonial.photo_url ?? localPhotos[testimonial.name]}
+          alt={testimonial.name}
+        />
+        <AvatarFallback>{initials(testimonial.name)}</AvatarFallback>
+      </Avatar>
+      <div>
+        <p className="font-semibold text-lg">{testimonial.name}</p>
+        {testimonial.role ? (
+          <p className="text-muted-foreground">{testimonial.role}</p>
+        ) : null}
+      </div>
+    </div>
+  </Card>
+);
+
 const Testimonials = () => {
   const { data } = useQuery({
     queryKey: ["testimonials"],
@@ -70,47 +98,42 @@ const Testimonials = () => {
 
   const testimonials = data?.length ? data : fallbackTestimonials;
 
+  /* El carrusel avanza exactamente un tercio, así que se renderizan tres
+     copias idénticas. Con pocas reseñas se repite la lista para que la fila
+     alcance a cubrir pantallas anchas. */
+  const marqueeSet = useMemo(() => {
+    const set = [...testimonials];
+    while (set.length < 4) set.push(...testimonials);
+    return set;
+  }, [testimonials]);
+
   return (
-    <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section
+      id="testimonials"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden"
+    >
       <div className="container mx-auto">
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl sm:text-4xl font-bold">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Lo que dicen mis clientes
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Historias reales de negocios que confiaron en mí.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((testimonial) => (
-            <Card
-              key={testimonial.id}
-              className="p-8 bg-card border-border hover:shadow-[var(--shadow-card)] transition-all duration-300 flex flex-col"
-            >
-              <MessageSquare className="h-10 w-10 text-primary/30 mb-6" />
-              {testimonial.rating ? (
-                <StarRating value={testimonial.rating} className="mb-4" />
-              ) : null}
-              <blockquote className="text-xl font-medium mb-6 leading-relaxed flex-1">
-                "{testimonial.quote}"
-              </blockquote>
-              <div className="border-t border-border pt-6 flex items-center gap-4">
-                <Avatar className="h-12 w-12">
-                  <AvatarImage
-                    src={testimonial.photo_url ?? localPhotos[testimonial.name]}
-                    alt={testimonial.name}
+        <div className="relative">
+          <div className="flex items-stretch animate-scroll-testimonials">
+            {["first", "second", "third"].map((copy) => (
+              <div key={copy} className="flex items-stretch" aria-hidden={copy !== "first"}>
+                {marqueeSet.map((testimonial, index) => (
+                  <TestimonialCard
+                    key={`${copy}-${testimonial.id}-${index}`}
+                    testimonial={testimonial}
                   />
-                  <AvatarFallback>{initials(testimonial.name)}</AvatarFallback>
-                </Avatar>
-                <div>
-                  <p className="font-semibold text-lg">{testimonial.name}</p>
-                  {testimonial.role ? (
-                    <p className="text-muted-foreground">{testimonial.role}</p>
-                  ) : null}
-                </div>
+                ))}
               </div>
-            </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

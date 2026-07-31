@@ -158,6 +158,23 @@ All colors MUST be HSL.
     animation: scroll-infinite 10s linear infinite;
   }
 
+  /* Testimonios: hay que alcanzar a leerlos, así que van lento y
+     se detienen al pasar el mouse. */
+  .animate-scroll-testimonials {
+    animation: scroll-infinite 60s linear infinite;
+  }
+
+  .animate-scroll-testimonials:hover {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll-infinite,
+    .animate-scroll-testimonials {
+      animation: none;
+    }
+  }
+
   @media (min-width: 768px) {
     .animate-scroll-infinite {
       animation: scroll-infinite 20s linear infinite;
