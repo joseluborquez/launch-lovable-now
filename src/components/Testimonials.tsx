@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { MessageSquare, MoveRight } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import StarRating from "@/components/StarRating";
 import { supabase } from "@/integrations/supabase/client";
 import type { Tables } from "@/integrations/supabase/types";
@@ -113,15 +111,6 @@ const Testimonials = () => {
               </div>
             </Card>
           ))}
-        </div>
-        <div className="text-center mt-12 space-y-3">
-          <p className="text-muted-foreground">¿Trabajamos juntos?</p>
-          <Button asChild variant="outline" size="lg" className="group">
-            <Link to="/resena">
-              Deja tu reseña
-              <MoveRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
         </div>
       </div>
     </section>
