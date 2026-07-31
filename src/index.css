@@ -91,6 +91,13 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-sans antialiased;
   }
 
+  /* Space Grotesk en titulares, Inter en el cuerpo. */
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+  }
+
   html {
     scroll-behavior: smooth;
   }
