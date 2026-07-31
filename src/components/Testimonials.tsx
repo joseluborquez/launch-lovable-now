@@ -6,19 +6,11 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MessageSquare, MoveRight } from "lucide-react";
 import StarRating from "@/components/StarRating";
 import { supabase } from "@/integrations/supabase/client";
+import type { Tables } from "@/integrations/supabase/types";
 import juanPabloVargas from "@/assets/juan-pablo-vargas.png";
 import juanNunez from "@/assets/juan-nunez.png";
 
-export type Testimonial = {
-  id: string;
-  created_at: string;
-  name: string;
-  role: string | null;
-  quote: string;
-  rating: number | null;
-  photo_url: string | null;
-  approved: boolean;
-};
+type Testimonial = Tables<"testimonials">;
 
 /** Fotos ya alojadas en el repo, por si la reseña viene de la base sin foto propia. */
 const localPhotos: Record<string, string> = {
@@ -62,13 +54,13 @@ const fetchTestimonials = async (): Promise<Testimonial[]> => {
   if (!supabase) return [];
 
   const { data, error } = await supabase
-    .from("testimonials" as any)
+    .from("testimonials")
     .select("id, created_at, name, role, quote, rating, photo_url, approved")
     .eq("approved", true)
     .order("created_at", { ascending: false });
 
   if (error) throw error;
-  return ((data ?? []) as unknown) as Testimonial[];
+  return (data ?? []) as Testimonial[];
 };
 
 const Testimonials = () => {
