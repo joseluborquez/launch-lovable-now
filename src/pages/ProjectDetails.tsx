@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
@@ -214,7 +214,18 @@ const projectsData: { [key: string]: any } = {
 const ProjectDetails = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  
+  const location = useLocation();
+
+  /* Un "atrás" real, para volver a la sección desde donde se entró. Si se llegó
+     por un link compartido no hay historial previo, así que va al inicio. */
+  const goBack = () => {
+    if (location.key !== "default") {
+      navigate(-1);
+    } else {
+      navigate("/");
+    }
+  };
+
   const project = projectsData[projectId || ""];
 
   if (!project) {
@@ -235,7 +246,7 @@ const ProjectDetails = () => {
     <div className="min-h-screen">
       {/* Navigation */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <Button variant="ghost" onClick={() => navigate("/")}>
+        <Button variant="ghost" onClick={goBack}>
           <ArrowLeft className="mr-2 h-4 w-4" />
           Volver
         </Button>
