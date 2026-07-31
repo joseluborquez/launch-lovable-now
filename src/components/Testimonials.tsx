@@ -62,7 +62,7 @@ const fetchTestimonials = async (): Promise<Testimonial[]> => {
   if (!supabase) return [];
 
   const { data, error } = await supabase
-    .from("testimonials")
+    .from("testimonials" as any)
     .select("id, created_at, name, role, quote, rating, photo_url, approved")
     .eq("approved", true)
     .order("created_at", { ascending: false });
