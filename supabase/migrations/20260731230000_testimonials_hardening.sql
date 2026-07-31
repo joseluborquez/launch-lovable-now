@@ -1,9 +1,13 @@
 -- Repone las protecciones que se perdieron al recrear la tabla `testimonials`.
 
 -- 1. El email es privado: se guarda, pero no se puede leer desde el sitio.
---    (Para aprobar reseñas se usa el editor de tablas, que corre como service_role
---     y no está afectado por este revoke.)
-revoke select (email) on public.testimonials from anon, authenticated;
+--    Un GRANT SELECT de tabla manda sobre los permisos por columna, así que hay
+--    que quitarlo y otorgar solo las columnas públicas.
+--    (Para aprobar reseñas se usa el editor de tablas, que corre como
+--     service_role y no está afectado por esto.)
+revoke select on public.testimonials from anon, authenticated;
+grant select (id, created_at, name, role, quote, rating, photo_url, approved)
+  on public.testimonials to anon, authenticated;
 
 -- 2. Nadie se autopublica: toda reseña entra pendiente de aprobación.
 drop policy if exists "Cualquiera puede enviar una reseña" on public.testimonials;
